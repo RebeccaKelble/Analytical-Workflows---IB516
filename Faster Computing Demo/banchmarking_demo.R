@@ -42,3 +42,6 @@ print(time_elapsed2)
 
 # Benchmark with system.time
 system.time(geom_growth_base(T = 9E5))
+
+# Benchmark with microbanchmark
+library(microbenchmark)
