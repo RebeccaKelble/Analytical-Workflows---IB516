@@ -31,3 +31,7 @@ comp <- microbenchmark(TS_009 = {geom_growth_base(T = 9)},
 TS_099 = {geom_growth_base(T = 99)},
 TS_999 = {geom_growth_base(T = 999)})
 comp
+
+# Plot the results
+library(ggplot2)
+autoplot(comp)
