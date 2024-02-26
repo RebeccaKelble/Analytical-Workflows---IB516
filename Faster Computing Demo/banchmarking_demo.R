@@ -31,3 +31,14 @@ out <- geom_growth_base()
 end_time <- Sys.time()
 time_elapsed <- end_time - start_time
 print(time_elapsed)
+
+# Repeat simplest benchmark with longer time horizing
+# Repeat with greater number of time-points
+start_time2 <- Sys.time()
+out2 <- geom_growth_base(T = 9E5)
+end_time2 <- Sys.time()
+time_elapsed2 <- end_time2 - start_time2
+print(time_elapsed2)
+
+# Benchmark with system.time
+system.time(geom_growth_base(T = 9E5))
